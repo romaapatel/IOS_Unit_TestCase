@@ -16,6 +16,8 @@
 		FF129E0D28BF225800C2B651 /* IOSUnitTestCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E0C28BF225800C2B651 /* IOSUnitTestCasesTests.swift */; };
 		FF129E1728BF225800C2B651 /* IOSUnitTestCasesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E1628BF225800C2B651 /* IOSUnitTestCasesUITests.swift */; };
 		FF129E1928BF225800C2B651 /* IOSUnitTestCasesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E1828BF225800C2B651 /* IOSUnitTestCasesUITestsLaunchTests.swift */; };
+		FF129E2628BF263400C2B651 /* DemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E2528BF263400C2B651 /* DemoViewModel.swift */; };
+		FF129E2A28BF29C800C2B651 /* DemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E2928BF29C800C2B651 /* DemoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FF129E1228BF225800C2B651 /* IOSUnitTestCasesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSUnitTestCasesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF129E1628BF225800C2B651 /* IOSUnitTestCasesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSUnitTestCasesUITests.swift; sourceTree = "<group>"; };
 		FF129E1828BF225800C2B651 /* IOSUnitTestCasesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSUnitTestCasesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF129E2528BF263400C2B651 /* DemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewModel.swift; sourceTree = "<group>"; };
+		FF129E2928BF29C800C2B651 /* DemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				FF129DFE28BF225800C2B651 /* Assets.xcassets */,
 				FF129E0028BF225800C2B651 /* LaunchScreen.storyboard */,
 				FF129E0328BF225800C2B651 /* Info.plist */,
+				FF129E2528BF263400C2B651 /* DemoViewModel.swift */,
+				FF129E2928BF29C800C2B651 /* DemoModel.swift */,
 			);
 			path = IOSUnitTestCases;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF129DFA28BF225700C2B651 /* ViewController.swift in Sources */,
+				FF129E2628BF263400C2B651 /* DemoViewModel.swift in Sources */,
 				FF129DF628BF225600C2B651 /* AppDelegate.swift in Sources */,
+				FF129E2A28BF29C800C2B651 /* DemoModel.swift in Sources */,
 				FF129DF828BF225600C2B651 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
