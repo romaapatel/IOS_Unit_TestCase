@@ -10,20 +10,42 @@ import XCTest
 
 class IOSUnitTestCasesTests: XCTestCase {
 
+    //Mark :- Variables
+    var demoViewModel : DemoViewModel!
+
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+       demoViewModel = DemoViewModel()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        try super.tearDownWithError()
+        demoViewModel = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func test_Name_Empty() throws {
+        XCTAssertTrue(demoViewModel.validation(userModel: User(name: "", email: "abc@gmail.com", password: "123456")),"Name is Empty")
+
+
+    }
+    func test_Email_Empty() throws {
+        XCTAssertTrue(demoViewModel.validation(userModel: User(name: "ABC", email: "", password: "123456")),"Email is Empty")
+
+
+    }
+    func test_Password_Empty() throws {
+        XCTAssertTrue(demoViewModel.validation(userModel: User(name: "ABC", email: "abc@gmail.com", password: "")),"Password is Empty")
+
+
+    }
+    func test_Valid_Email() throws {
+        XCTAssertTrue(demoViewModel.validation(userModel: User(name: "ABC", email: "abcxyz", password: "123456")),"Email is Not Valid")
+
+
+    }
+    func test_Success() throws {
+        XCTAssertTrue(demoViewModel.validation(userModel: User(name: "ABC", email: "abc@gmail.com", password: "123456")),"Test Case Success")
+
+
     }
 
     func testPerformanceExample() throws {
